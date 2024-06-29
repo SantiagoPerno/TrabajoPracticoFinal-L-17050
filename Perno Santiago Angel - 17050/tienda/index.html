@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="headerTienda">
+        <div class="logo-tienda">
+
+            <a href="../index.html">
+                <div class="logoTienda">
+                    <img src="dota-2-logo.png" href="..index.html" t="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div> <button id="botonAgregar" onclick="mostrarTabla()">Agregar</button></div>
+
+    <div class="estructuraTablas">
+
+        <table class="tablaMostrar">
+            <tr class="titulosMostrar">
+                <td>Skin</td>
+                <td>PESOS ARG</td>
+                <td>USD</td>
+                <td>Fecha</td>
+            </tr>
+
+            <tbody id="resultado"></tbody>
+
+        </table>
+
+        <div id="tablaDatos">
+            <h1>Agregar Skin</h1>
+
+            <label for="">Nombre skin</label>
+            <br>
+            <input type="text" id="skin">
+            <br><br>
+
+            <label for="">Pesos ARG</label>
+            <br>
+            <input type="text" id="pesosArg">
+            <br><br>
+
+            <label for="">USD</label>
+            <br>
+            <input type="text" id="usd">
+            <br><br>
+
+            <label for="">Fecha</label>
+            <br>
+            <input type="date" id="fecha">
+            <br><br>
+
+            <button onclick="crearSkin()">Agregar Skin</button>
+            <br><br>
+        </div>
+
+        <div id="tablaModificar">
+            <h1>Mofificar Skin</h1>
+
+            <label for="">ID skin</label>
+            <br>
+            <input type="text" id="idModificar">
+            <br><br>
+
+            <label for="">Nombre skin</label>
+            <br>
+            <input type="text" id="skinModificar">
+            <br><br>
+
+            <label for="">Pesos ARG</label>
+            <br>
+            <input type="text" id="pesosArgModificar">
+            <br><br>
+
+            <label for="">USD</label>
+            <br>
+            <input type="text" id="usdModificar">
+            <br><br>
+
+            <label for="">Fecha</label>
+            <br>
+            <input type="date" id="fechaModificar">
+            <br><br>
+
+            <button onclick="modificarSkin()">Modificar Skin</button>
+            <br><br>
+
+        </div>
+    </div>
+    <script src="scriptT.js"></script>
+</body>
+
+</html>
